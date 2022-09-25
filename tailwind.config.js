@@ -6,7 +6,14 @@ module.exports = {
     "./layouts/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'open-sans': ['Open Sans', 'sans-serif'],
+      },
+      screens: {
+        'xs': '312px',
+      },
+    },
   },
   plugins: [],
 }
