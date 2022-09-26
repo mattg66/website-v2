@@ -2,18 +2,25 @@ import React from 'react'
 import { AppProps } from 'next/app'
 
 import '../styles/index.css'
-import Head from 'next/head';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
         <>
-            <Head>
-            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet"/>
-            </Head>
-            <Component {...pageProps} />
+            <GoogleReCaptchaProvider
+                reCaptchaKey="6LfDztwZAAAAAMHH1M_JoQm9k8bj7MaopFXtsDSH"
+                scriptProps={{
+                    async: false,
+                    defer: false,
+                    appendTo: "head",
+                    nonce: undefined,
+                }}
+            >
+                <Component {...pageProps} />
+            </GoogleReCaptchaProvider>
         </>
     )
 }

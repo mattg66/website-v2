@@ -8,3 +8,16 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
+.timeline-icon {
+    max-height: 80%;
+    max-width: 80%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.grecaptcha-badge { visibility: hidden; }

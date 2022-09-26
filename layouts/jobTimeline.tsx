@@ -1,5 +1,6 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+import CiscoLogo from '../components/CiscoLogo';
+import F6thLogo from '../components/F6thLogo';
 
 const JobTimeline: React.FC<{}> = ({ }) => {
     return (
@@ -8,13 +9,13 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                 <VerticalTimeline lineColor={'#00155f'}>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                        contentStyle={{ background: '#003db6', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         date="July 2021 - August 2022"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        icon={null}
+                        iconStyle={{ background: '#003db6', color: '#fff' }}
+                        icon={<CiscoLogo/>}
                     >
-                        <h2 className="vertical-timeline-element-title">Network Engineer Intern</h2>
+                        <h1 className="text-2xl">Network Engineer Intern</h1>
                         <h4 className="vertical-timeline-element-subtitle">Cisco - Full Time</h4>
                         <p>
                             Worked in a team responsible for maintaining lab space used for testing operations.
@@ -32,27 +33,27 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                        contentStyle={{ background: '#003db6', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         date="Nov 2021 - Present"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        icon={null}
+                        iconStyle={{ background: '#fff', color: '#fff' }}
+                        icon={<img src='/media/starburst.png' className="timeline-icon" />}
                     >
-                        <h2 className="vertical-timeline-element-title">Sound Designer and Operator</h2>
+                        <h1 className="text-2xl">Sound Designer and Operator</h1>
                         <h4 className="vertical-timeline-element-subtitle">Starburst Theatre Foundation - Volunteer</h4>
                         <p>
-                            Leading the design and implementation of sound reinforcement for our month long panto run during the festive season and various other events taking place throughout the year.
+                            Leading the design, implementation and operation of sound reinforcement for our month long panto run during the festive season and various other events taking place throughout the year.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                        contentStyle={{ background: '#003db6', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         date="June 2015 - Present"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        icon={null}
+                        iconStyle={{ background: '#fff', color: '#fff' }}
+                        icon={<img src='/media/online-design.fd1b02a4.png' className='timeline-icon'/>}
                     >
-                        <h2 className="vertical-timeline-element-title">Full stack developer</h2>
+                        <h1 className="text-2xl">Full stack developer</h1>
                         <h4 className="vertical-timeline-element-subtitle">Self-employed</h4>
                         <p>
                             Designed, Developed and Hosted a variety of websites for a variety of clients. Ranging from simple static HTML based websites, to full responsive PWAs backed with bespoke CMS.
@@ -60,13 +61,13 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                        contentStyle={{ background: '#003db6', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         date="June 2019 - September 2020"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        icon={null}
+                        iconStyle={{ background: '#fff', color: '#fff' }}
+                        icon={<F6thLogo />}
                     >
-                        <h2 className="vertical-timeline-element-title">Technical Theatre Technician</h2>
+                        <h1 className="text-2xl">Technical Theatre Technician</h1>
                         <h4 className="vertical-timeline-element-subtitle">Farnborough 6th Form College - Freelance</h4>
                         <p>
                             Planned, designed and operated sound and lighting for a mix of internal and external events.
@@ -77,13 +78,13 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                        contentStyle={{ background: '#003db6', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         date="June 2017 - September 2019"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        icon={null}
+                        iconStyle={{ background: '#003db6', color: '#fff' }}
+                        icon={<img src='/media/macs.png' className="timeline-icon" />}
                     >
-                        <h2 className="vertical-timeline-element-title">FoH Team Member / Waiter</h2>
+                        <h1 className="text-2xl">FoH Team Member / Waiter</h1>
                         <h4 className="vertical-timeline-element-subtitle">McMullen & Sons Ltd</h4>
                         <p>
                             Started off as a food runner, and then progressed to be a waiter, serving customers food and drink with a smile.

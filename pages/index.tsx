@@ -3,17 +3,19 @@ import Lockup from '../layouts/lockup'
 import JobTimeline from '../layouts/jobTimeline'
 import ExperienceTimeline from '../layouts/experienceTimeline'
 import HorizontalDivider from '../components/HorizontalDivider'
+import 'react-vertical-timeline-component/style.min.css';
 
 import { faKeyboard, faServer, faEthernet, faMicrochip, faHardDrive, faShieldHalved } from '@fortawesome/free-solid-svg-icons'
 
 
 import Card from '../components/Card'
+import Contact from '../layouts/contact'
 const Index = () => (
   <>
     <Lockup />
     <JobTimeline />
-    <HorizontalDivider>
-      <h1 className="text-2xl xs:text-4xl">My Skills</h1>
+    <HorizontalDivider className="bg-darkBlue">
+      <h1 className="text-2xl xs:text-4xl text-white mt-4">My Skills</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         <Card icon={faKeyboard} title="Programming">
           <p>PHP/Laravel</p>
@@ -64,8 +66,11 @@ const Index = () => (
         </Card>
 
       </div>
+      <h1 className="text-2xl xs:text-4xl text-white mb-5">Projects & Work</h1>
     </HorizontalDivider>
     <ExperienceTimeline />
+    <Contact />
+
   </>
 )
 

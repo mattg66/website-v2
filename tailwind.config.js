@@ -13,6 +13,11 @@ module.exports = {
       screens: {
         'xs': '312px',
       },
+      colors: {
+        lightBlue: '#0025ab',
+        darkBlue: '#00155f',
+        otherBlue: '#003db6',
+      }
     },
   },
   plugins: [],
