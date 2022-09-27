@@ -106,7 +106,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         date="June 2019 - September 2020"
                         iconStyle={{ background: '#fff', color: '#fff' }}
-                        icon={<F6thLogo/>}
+                        icon={<img src='/media/online-design.fd1b02a4.png' className='timeline-icon'/>}
                     >
                         <h1 className="text-2xl mb-2">Web Development</h1>
                         <Link href="https://carllyonsstudio.com"><Image src='/media/cls.c1591680.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain"/></Link>
