@@ -62,6 +62,25 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: '#003db6', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
+                        date="June 2020 - September 2020"
+                        iconStyle={{ background: '#fff', color: '#fff' }}
+                        icon={<img src='/media/online-design.fd1b02a4.png' className='timeline-icon' />}
+                    >
+                        <h1 className="text-2xl mb-2">Web Development</h1>
+                        <Link href="https://carllyonsstudio.com">
+                            <a>
+                                <Image src='/media/cls.c1591680.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
+                                <h3><u>Carl Lyons Studio</u></h3>
+                            </a>
+                        </Link>
+                        <p>
+                            Built using React and PHP, this website is my flagship project to date. Worked with the client to design a bespoke CMS to power the site, including features such as automatic watermark generation, and secure private vaults for holding client work.
+                        </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: '#003db6', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         date="June 2019 - September 2020"
                         iconStyle={{ background: '#fff', color: '#fff' }}
                         icon={<F6thLogo />}
@@ -98,25 +117,6 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         <Image src='/media/rack.2399c0c9.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
                         <p>
                             Planned and implemented a new structured cabling network to future proof the theatre for the rise in lighting and sound data over IP networks.
-                        </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        contentStyle={{ background: '#003db6', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
-                        date="June 2019 - September 2020"
-                        iconStyle={{ background: '#fff', color: '#fff' }}
-                        icon={<img src='/media/online-design.fd1b02a4.png' className='timeline-icon' />}
-                    >
-                        <h1 className="text-2xl mb-2">Web Development</h1>
-                        <Link href="https://carllyonsstudio.com">
-                            <a>
-                                <Image src='/media/cls.c1591680.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
-                                <h2><u>Carl Lyons Studio</u></h2>
-                            </a>
-                        </Link>
-                        <p>
-                            Built using React and PHP, this website is my flagship project to date. Worked with the client to design a bespoke CMS to power the site, including features such as automatic watermark generation, and secure private vaults for holding client work.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
