@@ -3,7 +3,7 @@ import Image from 'next/image';
 import CiscoLogo from '../components/CiscoLogo';
 
 import F6thLogo from '../components/F6thLogo';
-import Link from 'next/link';
+
 const ExperienceTimeline: React.FC<{}> = ({ }) => {
     return (
         <>
@@ -67,12 +67,10 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         icon={<img src='/media/online-design.fd1b02a4.png' className='timeline-icon' />}
                     >
                         <h1 className="text-2xl mb-2">Web Development</h1>
-                        <Link href="https://carllyonsstudio.com">
-                            <a>
+                            <a href="https://carllyonsstudio.com" target="_blank">
                                 <Image src='/media/cls.c1591680.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
                                 <h3><u>Carl Lyons Studio</u></h3>
                             </a>
-                        </Link>
                         <p>
                             Built using React and PHP, this website is my flagship project to date. Worked with the client to design a bespoke CMS to power the site, including features such as automatic watermark generation, and secure private vaults for holding client work.
                         </p>
