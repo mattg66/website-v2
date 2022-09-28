@@ -79,42 +79,42 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: '#003db6', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
-                        date="June 2019 - September 2020"
+                        date="August 2020"
                         iconStyle={{ background: '#fff', color: '#fff' }}
                         icon={<F6thLogo />}
                     >
                         <h1 className="text-2xl mb-2">Technical Theatre Technician</h1>
                         <Image src='/media/pulling_cables.e3146164.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
                         <p>
-                            Planned and implemented a new structured cabling network to future proof the theatre for the rise in lighting and sound data over IP networks.
+                            Planned and implemented a new structured cabling network to future proof the theatre for the rise in lighting and sound data over IP networks. Ran over 1KM of structured cabling
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: '#003db6', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
-                        date="June 2019 - September 2020"
+                        date="August 2020"
                         iconStyle={{ background: '#fff', color: '#fff' }}
                         icon={<F6thLogo />}
                     >
                         <h1 className="text-2xl mb-2">Technical Theatre Technician</h1>
                         <Image src='/media/bar_socket.0e194677.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
                         <p>
-                            Planned and implemented a new structured cabling network to future proof the theatre for the rise in lighting and sound data over IP networks.
+                            Planned for future capacity by placing DMX and RJ45 ports all over the theatre in positions required currently, and in the future.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: '#003db6', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
-                        date="June 2019 - September 2020"
+                        date="August 2020"
                         iconStyle={{ background: '#fff', color: '#fff' }}
                         icon={<F6thLogo />}
                     >
                         <h1 className="text-2xl mb-2">Technical Theatre Technician</h1>
                         <Image src='/media/rack.2399c0c9.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
                         <p>
-                            Planned and implemented a new structured cabling network to future proof the theatre for the rise in lighting and sound data over IP networks.
+                            Terminated all of the runs in a central rack complete with the associated networking equipment
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -128,7 +128,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         <h1 className="text-2xl mb-2">Technical Theatre Technician</h1>
                         <Image src='/media/orchestra_sound.b42bf72f.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
                         <p>
-                            Planned and implemented a new structured cabling network to future proof the theatre for the rise in lighting and sound data over IP networks.
+                            Sound engineering for a big band in the theatre.
                         </p>
                     </VerticalTimelineElement>
                 </VerticalTimeline>
