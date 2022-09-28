@@ -11,7 +11,7 @@ const Lockup: React.FC<{}> = ({ children }) => {
 
     return (
         <>
-            <header className="relative flex items-center justify-center min-h-screen overflow-hidden bg-black">
+            <header className="relative flex items-center justify-center min-h-screen overflow-hidden">
                 <div className="relative z-30 p-5 text-2xl text-white font-open-sans text-center">
                     <div className="grid grid-cols-1 md:grid-cols-2">
                         <div className="max-w-xs mx-auto mb-5 md:mb-0">
@@ -40,7 +40,7 @@ const Lockup: React.FC<{}> = ({ children }) => {
                         muted
                         loop
                         autoPlay
-                        className="absolute z-5 w-auto min-w-full min-h-full max-w-none bg-black blur-lg"
+                        className="absolute z-5 w-auto min-w-full min-h-full max-w-none blur-lg"
                         src="media/background.8b54e259.mp4"
                         onLoadedData={() => setLoading(false)}
                     >
