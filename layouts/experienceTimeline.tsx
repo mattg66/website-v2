@@ -62,6 +62,18 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: '#003db6', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
+                        iconStyle={{ background: '#003db6', color: '#fff' }}
+                        icon={<img src='/media/starburst.png' className="timeline-icon" />}
+                        date="December 2021"
+                    >
+                        <h1 className="text-2xl">Sound Engineering</h1>
+                        <Image src='/media/sound.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
+                        <p>Designed, installed and operated sound as a volunteer for Starburst Theatre's annual Pantomime in aid of children with challenging disabilites</p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: '#003db6', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         date="June 2020 - September 2020"
                         iconStyle={{ background: '#fff', color: '#fff' }}
                         icon={<img src='/media/online-design.fd1b02a4.png' className='timeline-icon' />}

@@ -13,7 +13,7 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         date="July 2021 - August 2022"
                         iconStyle={{ background: '#003db6', color: '#fff' }}
-                        icon={<CiscoLogo/>}
+                        icon={<CiscoLogo />}
                     >
                         <h1 className="text-2xl">Network Engineer Intern</h1>
                         <h4 className="vertical-timeline-element-subtitle">Cisco - Full Time</h4>
@@ -44,6 +44,9 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                         <p>
                             Leading the design, implementation and operation of sound reinforcement for our month long panto run during the festive season and various other events taking place throughout the year.
                         </p>
+                        <p>
+                            All profits go the Starburst Foundation, who raise money for children with challenging disabilities
+                        </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
@@ -51,7 +54,7 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         date="June 2015 - Present"
                         iconStyle={{ background: '#fff', color: '#fff' }}
-                        icon={<img src='/media/online-design.fd1b02a4.png' className='timeline-icon'/>}
+                        icon={<img src='/media/online-design.fd1b02a4.png' className='timeline-icon' />}
                     >
                         <h1 className="text-2xl">Full stack developer</h1>
                         <h4 className="vertical-timeline-element-subtitle">Self-employed</h4>
