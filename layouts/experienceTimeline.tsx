@@ -62,7 +62,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: '#003db6', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
-                        iconStyle={{ background: '#003db6', color: '#fff' }}
+                        iconStyle={{ background: '#fff', color: '#fff' }}
                         icon={<img src='/media/starburst.png' className="timeline-icon" />}
                         date="December 2021"
                     >
