@@ -66,7 +66,7 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: '#003db6', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
-                        date="June 2019 - September 2020"
+                        date="March 2019 - September 2020"
                         iconStyle={{ background: '#fff', color: '#fff' }}
                         icon={<F6thLogo />}
                     >
