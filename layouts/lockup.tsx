@@ -40,7 +40,7 @@ const Lockup: React.FC<{}> = ({ children }) => {
                         muted
                         loop
                         autoPlay
-                        className="absolute z-5 w-auto min-w-full min-h-full max-w-none blur-lg"
+                        className="absolute z-5 w-auto min-w-screen min-h-screen blur-lg scale-110"
                         src="media/background.8b54e259.mp4"
                         onLoadedData={() => setLoading(false)}
                     >
