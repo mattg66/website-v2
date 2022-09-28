@@ -11,7 +11,7 @@ const Lockup: React.FC<{}> = ({ children }) => {
 
     return (
         <>
-            <header className="relative flex items-center justify-center min-h-screen overflow-hidden">
+            <header className="relative flex items-center justify-center min-h-screen overflow-hidden bg-black">
                 <div className="relative z-30 p-5 text-2xl text-white font-open-sans text-center">
                     <div className="grid grid-cols-1 md:grid-cols-2">
                         <div className="max-w-xs mx-auto mb-5 md:mb-0">
