@@ -55,7 +55,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         <h1 className="text-2xl">Private 5G Proof of Concept</h1>
                         <Image src='/media/p5g.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
                         <p>Worked as part of a small taskforce to put together an industry first proof of concept for a private 5G solution.</p>
-                        <p>I standardised testbed deployment for similar projects in the future, and worked closely with the project team to iron out networking and performance issues.</p>
+                        <p>I led and standardised testbed deployment for similar projects in the future, and worked closely with the project team to iron out networking and performance issues.</p>
                         <p>Technologies involved: NCS, IOS-XE, PTP, GPS, vDU, vCU, RU</p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
