@@ -62,7 +62,7 @@ const Contact: React.FC<{}> = ({ }) => {
     };
     return (
         <>
-            <div className="bg-gray-700 pb-5 float-middle dark:text-white">
+            <div className="bg-gray-700 pb-5 float-middle text-white">
                 <div className="text-center">
                     <h1 className="text-white text-4xl mx-auto pt-4 pb-4">Get In Touch</h1>
                 </div>
