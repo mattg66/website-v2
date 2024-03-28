@@ -43,7 +43,7 @@ function handler(req: NextApiRequest, res: NextApiResponse) {
         const transporter = nodemailer.createTransport({
             port: 587,
             host: process.env.smtp,
-            secure: false,
+            secure: true,
             auth: {
                 user: process.env.username,
                 pass: process.env.password
