@@ -41,7 +41,7 @@ function handler(req: NextApiRequest, res: NextApiResponse) {
     if (Object.keys(req.body.data.name).length <= 40 && Object.keys(req.body.data.email).length <= 100 && Object.keys(req.body.data.message).length <= 5000 && validateEmail(req.body.data.email)) {
         let nodemailer = require('nodemailer')
         const transporter = nodemailer.createTransport({
-            port: 143,
+            port: 587,
             host: process.env.smtp,
             secure: false,
             auth: {
