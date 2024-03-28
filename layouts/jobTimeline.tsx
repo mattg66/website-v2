@@ -7,6 +7,23 @@ const JobTimeline: React.FC<{}> = ({ }) => {
         <>
             <div className="bg-black">
                 <VerticalTimeline lineColor={'#00155f'}>
+                <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: '#003db6', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
+                        date="Sept 2023 - Present"
+                        iconStyle={{ background: '#003db6', color: '#fff' }}
+                        icon={<CiscoLogo />}
+                    >
+                        <h1 className="text-2xl">Network Consulting Engineer</h1>
+                        <h4 className="vertical-timeline-element-subtitle">Cisco CX Solution Validation Services - Full Time</h4>
+                        <p>
+                            Responsible for the design, implementation and testing of various technology stacks for Cisco's largest companies. 
+                        </p>
+                        <p>
+                            Role involves working with large multi-national customers and provide direction and guidance on how we can best validate and test their network infrastructure to ensure reliability and performance. Architected and implemented network designs and constructed testplans and automated testcases to improve efficiency and reusability of testing.
+                        </p>
+                    </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: '#003db6', color: '#fff' }}
@@ -21,15 +38,8 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                             Worked in a team responsible for maintaining lab space used for testing operations.
                         </p>
                         <p>
-                            Responsibilities included
-
+                            Responsibilities included maintaining and planning the expansion/improvement of infrastructure, working in a team to plan such maintenance/upgrades, planning testbed deployment, from initial scoping phase to full testbed availability, and working with architects and engineers to solve problems.
                         </p>
-                        <ul>
-                            <li>Maintaining and planning the expansion/improvement of infrastructure</li>
-                            <li>Working in a team to plan such maintenance/upgrades</li>
-                            <li>Planning testbed deployment, from initial scoping phase to full testbed availability</li>
-                            <li>Working with architects and engineers to solve problems</li>
-                        </ul>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"

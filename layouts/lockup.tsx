@@ -2,7 +2,7 @@ import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react"
 import VideoPlaceholder from "../components/VideoPlaceholder"
 import NoSSR from "../components/NoSSR"
 import Image from "next/image"
-import PFP from "../public/media/profile.4949af75.jpg"
+import PFP from "../public/media/pfp.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 const Lockup: React.FC<{setParentLoading: Dispatch<SetStateAction<boolean>>}> = ({ setParentLoading, children }) => {
@@ -14,7 +14,7 @@ const Lockup: React.FC<{setParentLoading: Dispatch<SetStateAction<boolean>>}> = 
                 <div className="relative z-30 p-5 text-2xl text-white font-open-sans text-center">
                     <div className="grid grid-cols-1 md:grid-cols-2">
                         <div className="max-w-xs mx-auto mb-5 md:mb-0">
-                            <Image src={PFP} className="rounded-full" onLoad={() => setParentLoading(false)}/>
+                            <Image src={PFP} className="rounded-full" onLoadingComplete={() => setParentLoading(false)}/>
                         </div>
                         <div className="text-2xl xs:text-4xl font-bold my-auto">
                             <h1>Matt Gaynor</h1>
@@ -29,7 +29,6 @@ const Lockup: React.FC<{setParentLoading: Dispatch<SetStateAction<boolean>>}> = 
                     </div>
                     <div className="grid mt-20 text-3xl">
                         <h4>I'm Matt, a motivated and enthusiastic individual with a passion for all things IT and AV</h4>
-                        <h4 className="mt-4">See some of my work below</h4>
                     </div>
                 </div>
                 <VideoPlaceholder loading={loading} />

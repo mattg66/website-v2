@@ -96,37 +96,11 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         icon={<F6thLogo />}
                     >
                         <h1 className="text-2xl mb-2">Technical Theatre Technician</h1>
-                        <LazyImage src='/media/pulling_cables.e3146164.jpg' />
-                        <p>
-                            Planned and implemented a new structured cabling network to future proof the theatre for the rise in lighting and sound data over IP networks. Ran over 1KM of structured cabling
-                        </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        contentStyle={{ background: '#003db6', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
-                        date="August 2020"
-                        iconStyle={{ background: '#fff', color: '#fff' }}
-                        icon={<F6thLogo />}
-                    >
-                        <h1 className="text-2xl mb-2">Technical Theatre Technician</h1>
-                        <LazyImage src='/media/bar_socket.0e194677.jpg' />
-                        <p>
-                            Planned for future capacity by placing DMX and RJ45 ports all over the theatre in positions required currently, and in the future.
-                        </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        contentStyle={{ background: '#003db6', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
-                        date="August 2020"
-                        iconStyle={{ background: '#fff', color: '#fff' }}
-                        icon={<F6thLogo />}
-                    >
-                        <h1 className="text-2xl mb-2">Technical Theatre Technician</h1>
                         <LazyImage src='/media/rack.2399c0c9.jpg' />
                         <p>
-                            Terminated all of the runs in a central rack complete with the associated networking equipment
+                        Planned and implemented a new structured cabling network to future proof the theatre for the rise in lighting and sound data over IP networks. Ran over 1KM of structured cabling.
+                        Accounted for future capacity by placing DMX and RJ45 ports all over the theatre in positions required currently, and in the future.
+                        Terminated all of the runs in a central rack complete with the associated networking equipment.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement

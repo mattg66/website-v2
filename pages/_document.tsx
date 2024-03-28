@@ -5,7 +5,10 @@ export default function Document() {
         <Html>
             <Head>
                 <title>Matt Gaynor - Computer Networks Undergraduate</title>
-                <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" />
+                <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"></link>
                 <meta name="title" content="Matt Gaynor - Computer Networks Undergraduate" />
                 <meta name="description" content="I'm Matt, a motivated and enthusiastic individual with a passion for all things IT and AV" />
 
