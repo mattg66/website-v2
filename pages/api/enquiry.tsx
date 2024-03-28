@@ -41,13 +41,16 @@ function handler(req: NextApiRequest, res: NextApiResponse) {
     if (Object.keys(req.body.data.name).length <= 40 && Object.keys(req.body.data.email).length <= 100 && Object.keys(req.body.data.message).length <= 5000 && validateEmail(req.body.data.email)) {
         let nodemailer = require('nodemailer')
         const transporter = nodemailer.createTransport({
-            port: 587,
+            port: 143,
             host: process.env.smtp,
-            secure: true,
+            secure: false,
             auth: {
                 user: process.env.username,
                 pass: process.env.password
             },
+            tls: {
+                ciphers:'SSLv3'
+            }
         });
         const mailData = {
             from: process.env.username,
@@ -56,11 +59,13 @@ function handler(req: NextApiRequest, res: NextApiResponse) {
             html: `<div><p>From: ${req.body.data.name}</p><p>Email: ${req.body.data.email}</p><p>Message: ${req.body.data.message}</p></div>`
         }
         transporter.sendMail(mailData, function (err: any, info: any) {
-            if (err)
+            if (err) {
                 console.log(err)
-            else
+                res.status(500).json({ message: "Message Failed to Send" })
+            } else {
                 console.log(info)
-            res.status(200).json({ message: "Message Sent" })
+                res.status(200).json({ message: "Message Sent" })
+            }
 
         })
     } else {
