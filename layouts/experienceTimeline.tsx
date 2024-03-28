@@ -9,6 +9,39 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
         <>
             <div className="bg-black">
                 <VerticalTimeline lineColor={'#00155f'}>
+                <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: '#003db6', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
+                        iconStyle={{ background: '#003db6', color: '#fff' }}
+                        icon={<CiscoLogo />}
+                    >
+                        <h1 className="text-2xl mb-2">Large SDA Scale Validation</h1>
+                        <p>Worked closely with customer to design a testbed that accurately represents their large scale environment in our testing space. This included over 60 switches and internal testing tools to simulate scale.</p>
+                        <p>Deployed SDA across 5 sites using both MAN and SD-WAN topologies. This included all ancillary services such AD, DNS, DHCP and underlay routing. Deployed CC and mDNAC along with virtual networks and verified traffic flow and reachability.</p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: '#003db6', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
+                        iconStyle={{ background: '#003db6', color: '#fff' }}
+                        icon={<CiscoLogo />}
+                    >
+                        <h1 className="text-2xl mb-2">5G Cloud Core Testing</h1>
+                        <LazyImage src='/media/rack2.jpg' />
+                        <p>
+                            Designed the physical deployment of a large scale 5G VNF and CNF testbed with over 50 planned servers being used.
+                        </p>
+                        <p>
+                            Planned for future testbed requirements as the silicon shortage meant that some servers had expected delivery dates of over a year
+                        </p>
+                        <p>
+                            Became involved in the ACI fabric deployment and ensured that the OOB management network was performing as expected
+                        </p>
+                        <p>
+                            Technologies involved: ACI, UCS, ASR 9K, IOS-XE
+                        </p>
+                    </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: '#003db6', color: '#fff' }}

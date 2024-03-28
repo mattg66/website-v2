@@ -13,13 +13,13 @@ import Contact from '../layouts/contact'
 import { useState } from 'react'
 import MasterLoader from '../components/MasterLoader'
 const Index = () => {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(0)
   return (
     <>
       <CSSTransition
-        in={loading}
+        in={loading !== 2}
         timeout={500}
-        classNames="transition-opacity duration-500 opacity-100"
+        classNames="fade"
         unmountOnExit
       >
         <div className="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full overflow-hidden">
@@ -27,9 +27,8 @@ const Index = () => {
         </div>
       </CSSTransition>
       <header className="relative flex items-center justify-center min-h-[90vh] overflow-hidden">
-        <Lockup setParentLoading={setLoading} />
+        <Lockup loading={loading} setLoading={setLoading} />
       </header>
-      {!loading && <>
         <div className="font-open-sans">
           <JobTimeline />
           <HorizontalDivider className="bg-darkBlue">
@@ -42,6 +41,30 @@ const Index = () => {
                 <p>React/Next.js</p>
                 <p>HTML</p>
                 <p>CSS</p>
+              </Card>
+              <Card icon={faEthernet} title="Networking">
+                <h1 className='font-bold text-white'>Cisco - CCNA Certified</h1>
+                <p>IOS-XE and NX-OS</p>
+                <p>ACI Fundamentals</p>
+                <p>Cisco 9800 WLC Family</p>
+                <p>Cisco SDA - DNAC/CC</p>
+                <p>Cisco SD-WAN</p>
+                <h1 className='font-bold text-white'>Other</h1>
+                <p>UniFi</p>
+                <p>Mikrotik</p>
+              </Card>
+              <Card icon={faMicrochip} title="Containerisation / Virtualisation">
+                <h1 className='font-bold text-white'>VMware</h1>
+                <p>ESXi</p>
+                <p>vCenter</p>
+                <h1 className='font-bold text-white'>Linux</h1>
+                <p>Debian/CentOS/RHEL/Alma</p>
+                <p>KVM/Proxmox</p>
+                <p>Docker and LXC</p>
+              </Card>
+              <Card icon={faHardDrive} title="Storage">
+                <p>Cisco HyperFlex</p>
+                <p>TrueNAS/ZFS</p>
               </Card>
               <Card icon={faServer} title="System Administration">
                 <h1 className='font-bold text-white'>Linux</h1>
@@ -57,30 +80,6 @@ const Index = () => {
                 <p>RDS</p>
                 <p>CA</p>
               </Card>
-              <Card icon={faMicrochip} title="Containerisation / Virtualisation">
-                <h1 className='font-bold text-white'>VMware</h1>
-                <p>ESXi</p>
-                <p>vCenter</p>
-                <h1 className='font-bold text-white'>Linux</h1>
-                <p>Debian/CentOS/RHEL/Alma</p>
-                <p>KVM/Proxmox</p>
-                <p>Docker and LXC</p>
-              </Card>
-              <Card icon={faHardDrive} title="Storage">
-                <p>Cisco HyperFlex</p>
-                <p>TrueNAS/ZFS</p>
-              </Card>
-              <Card icon={faEthernet} title="Networking">
-                <h1 className='font-bold text-white'>Cisco - CCNA Certified</h1>
-                <p>IOS-XE and NX-OS</p>
-                <p>ACI Fundamentals</p>
-                <p>Cisco 9800 WLC Family</p>
-                <p>Cisco SDA - DNAC/CC</p>
-                <p>Cisco SD-WAN</p>
-                <h1 className='font-bold text-white'>Other</h1>
-                <p>UniFi</p>
-                <p>Mikrotik</p>
-              </Card>
               <Card icon={faShieldHalved} title="Security">
                 <p>Cisco ASA</p>
                 <p>Cisco ISE</p>
@@ -93,7 +92,6 @@ const Index = () => {
           <ExperienceTimeline />
           <Contact />
         </div>
-      </>}
     </>
   )
 }
