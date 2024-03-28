@@ -26,7 +26,7 @@ export default function submitEnquiryForm(req: NextApiRequest, res1: NextApiResp
             })
             .then((res) => {
                 if (res.success === true && res.score >= 0.5) {
-                    handler(req, res1)
+                    return handler(req, res1)
                 } else {
                     res1.status(403).json({ message: "Bad ReCaptcha" })
                 }
@@ -62,9 +62,11 @@ function handler(req: NextApiRequest, res: NextApiResponse) {
             if (err) {
                 console.log(err)
                 res.status(500).json({ message: "Message Failed to Send" })
+                return false
             } else {
                 console.log(info)
                 res.status(200).json({ message: "Message Sent" })
+                return true
             }
 
         })
