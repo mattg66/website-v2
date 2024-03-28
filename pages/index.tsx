@@ -4,7 +4,7 @@ import JobTimeline from '../layouts/jobTimeline'
 import ExperienceTimeline from '../layouts/experienceTimeline'
 import HorizontalDivider from '../components/HorizontalDivider'
 import 'react-vertical-timeline-component/style.min.css';
-
+import { CSSTransition } from 'react-transition-group'
 import { faKeyboard, faServer, faEthernet, faMicrochip, faHardDrive, faShieldHalved } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -16,8 +16,17 @@ const Index = () => {
   const [loading, setLoading] = useState(true)
   return (
     <>
+      <CSSTransition
+        in={loading}
+        timeout={500}
+        classNames="transition-opacity duration-500 opacity-100"
+        unmountOnExit
+      >
+        <div className="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full overflow-hidden">
+          <MasterLoader />
+        </div>
+      </CSSTransition>
       <header className="relative flex items-center justify-center min-h-[90vh] overflow-hidden">
-        <MasterLoader loading={loading} />
         <Lockup setParentLoading={setLoading} />
       </header>
       {!loading && <>
