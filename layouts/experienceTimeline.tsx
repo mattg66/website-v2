@@ -1,5 +1,5 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import Image from 'next/image';
+import LazyImage from '../components/LazyImage';
 import CiscoLogo from '../components/CiscoLogo';
 
 import F6thLogo from '../components/F6thLogo';
@@ -17,7 +17,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         icon={<CiscoLogo />}
                     >
                         <h1 className="text-2xl mb-2">High-Speed SP Network Testing</h1>
-                        <Image src='/media/rack1.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
+                        <LazyImage src='/media/rack1.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
                         <p>Planned and deployed hardware layout</p>
                         <p>Worked with engineers to introduce delay into the network for testing</p>
                         <p>Optimised PSU connections due to high power demand</p>
@@ -31,7 +31,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         icon={<CiscoLogo />}
                     >
                         <h1 className="text-2xl mb-2">5G Cloud Core Testing</h1>
-                        <Image src='/media/rack2.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
+                        <LazyImage src='/media/rack2.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
                         <p>
                             Designed the physical deployment of a large scale 5G VNF and CNF testbed with over 50 planned servers being used.
                         </p>
@@ -53,7 +53,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         icon={<CiscoLogo />}
                     >
                         <h1 className="text-2xl">Private 5G Proof of Concept</h1>
-                        <Image src='/media/p5g.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
+                        <LazyImage src='/media/p5g.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
                         <p>Worked as part of a small taskforce to put together an industry first proof of concept for a private 5G solution.</p>
                         <p>I led and standardised testbed deployment for similar projects in the future, and worked closely with the project team to iron out networking and performance issues.</p>
                         <p>Technologies involved: NCS, IOS-XE, PTP, GPS, vDU, vCU, RU</p>
@@ -67,7 +67,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         date="December 2021"
                     >
                         <h1 className="text-2xl">Sound Engineering</h1>
-                        <Image src='/media/sound.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
+                        <LazyImage src='/media/sound.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
                         <p>Designed, installed and operated sound as a volunteer for Starburst Theatre's annual Pantomime in aid of children with challenging disabilites</p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -80,7 +80,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                     >
                         <h1 className="text-2xl mb-2">Web Development</h1>
                             <a href="https://carllyonsstudio.com" target="_blank">
-                                <Image src='/media/cls.c1591680.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
+                                <LazyImage src='/media/cls.c1591680.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
                                 <h3><u>Carl Lyons Studio</u></h3>
                             </a>
                         <p>
@@ -96,7 +96,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         icon={<F6thLogo />}
                     >
                         <h1 className="text-2xl mb-2">Technical Theatre Technician</h1>
-                        <Image src='/media/pulling_cables.e3146164.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
+                        <LazyImage src='/media/pulling_cables.e3146164.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
                         <p>
                             Planned and implemented a new structured cabling network to future proof the theatre for the rise in lighting and sound data over IP networks. Ran over 1KM of structured cabling
                         </p>
@@ -110,7 +110,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         icon={<F6thLogo />}
                     >
                         <h1 className="text-2xl mb-2">Technical Theatre Technician</h1>
-                        <Image src='/media/bar_socket.0e194677.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
+                        <LazyImage src='/media/bar_socket.0e194677.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
                         <p>
                             Planned for future capacity by placing DMX and RJ45 ports all over the theatre in positions required currently, and in the future.
                         </p>
@@ -124,7 +124,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         icon={<F6thLogo />}
                     >
                         <h1 className="text-2xl mb-2">Technical Theatre Technician</h1>
-                        <Image src='/media/rack.2399c0c9.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
+                        <LazyImage src='/media/rack.2399c0c9.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
                         <p>
                             Terminated all of the runs in a central rack complete with the associated networking equipment
                         </p>
@@ -138,7 +138,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         icon={<F6thLogo />}
                     >
                         <h1 className="text-2xl mb-2">Technical Theatre Technician</h1>
-                        <Image src='/media/orchestra_sound.b42bf72f.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
+                        <LazyImage src='/media/orchestra_sound.b42bf72f.jpg' loading="lazy" width="100%" height="100%" layout="responsive" objectFit="contain" />
                         <p>
                             Sound engineering for a big band in the theatre.
                         </p>
