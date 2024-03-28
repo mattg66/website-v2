@@ -1,21 +1,20 @@
-import { useEffect, useRef, useState } from "react"
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react"
 import VideoPlaceholder from "../components/VideoPlaceholder"
 import NoSSR from "../components/NoSSR"
 import Image from "next/image"
 import PFP from "../public/media/profile.4949af75.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-const Lockup: React.FC<{}> = ({ children }) => {
+const Lockup: React.FC<{setParentLoading: Dispatch<SetStateAction<boolean>>}> = ({ setParentLoading, children }) => {
     const [loading, setLoading] = useState(true)
 
 
     return (
         <>
-            <header className="relative flex items-center justify-center min-h-screen overflow-hidden">
                 <div className="relative z-30 p-5 text-2xl text-white font-open-sans text-center">
                     <div className="grid grid-cols-1 md:grid-cols-2">
                         <div className="max-w-xs mx-auto mb-5 md:mb-0">
-                            <Image src={PFP} className="rounded-full" />
+                            <Image src={PFP} className="rounded-full" onLoad={() => setParentLoading(false)}/>
                         </div>
                         <div className="text-2xl xs:text-4xl font-bold my-auto">
                             <h1>Matt Gaynor</h1>
@@ -47,7 +46,6 @@ const Lockup: React.FC<{}> = ({ children }) => {
                         Your browser does not support the video tag.
                     </video>
                 </NoSSR>
-            </header>
         </>
     )
 }
