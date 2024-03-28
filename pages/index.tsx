@@ -10,7 +10,7 @@ import { faKeyboard, faServer, faEthernet, faMicrochip, faHardDrive, faShieldHal
 
 import Card from '../components/Card'
 import Contact from '../layouts/contact'
-const Index = () => (
+const Index = () => {(
   <>
     <Lockup />
     <JobTimeline />
@@ -72,6 +72,6 @@ const Index = () => (
     <Contact />
 
   </>
-)
+)}
 
 export default Index
