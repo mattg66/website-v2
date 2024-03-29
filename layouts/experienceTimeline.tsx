@@ -3,6 +3,8 @@ import LazyImage from '../components/LazyImage';
 import CiscoLogo from '../components/CiscoLogo';
 
 import F6thLogo from '../components/F6thLogo';
+import StarburstLogo from '../components/StarburstLogo';
+
 
 const ExperienceTimeline: React.FC<{}> = ({ }) => {
     return (
@@ -26,7 +28,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         contentStyle={{ background: '#003db6', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         iconStyle={{ background: '#003db6', color: '#fff' }}
-                        icon={<CiscoLogo />}
+                        icon={<StarburstLogo />}
                     >
                         <h1 className="text-2xl mb-2">Starburst Studios Network Deployment</h1>
                         <p>Refurbished an old village hall as part of a team and converted it into a collection of dance studios and vocal rooms as well as storage and office space.</p>
