@@ -28,9 +28,9 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         iconStyle={{ background: '#003db6', color: '#fff' }}
                         icon={<CiscoLogo />}
                     >
-                        <h1 className="text-2xl mb-2">Dance Studio Network Deployment</h1>
+                        <h1 className="text-2xl mb-2">Starburst Studios Network Deployment</h1>
                         <p>Refurbished an old village hall as part of a team and converted it into a collection of dance studios and vocal rooms as well as storage and office space.</p>
-                        <p>No infrastructure existed in the building so it was necessary to design and deploy a network solution. This consisted of running 50 Cat 6 runs to various positions for APs, CCTV and office computers. Budget was also very tight, so we used second hand equipment and open source software where possible. The resulting network needed to cope with over a hundred simultaneous clients during periods of high demand, so I selected Cisco 2802I APs and 9800-CL WLC due to their abundance secondhand and the 9800-CL not requiring licensing. 3650 switches and some old UCS M3 provided the compute required for the solution.</p>
+                        <p>No infrastructure existed in the building so it was necessary to design and deploy a network solution. This consisted of running 50 Cat 6 runs to various positions for APs, CCTV and office computers. Budget was also very tight, so we used second hand equipment and open source software where possible. The resulting network needed to cope with over a hundred simultaneous clients during periods of high demand, so I selected the Cisco 2802I APs and 9800-CL WLC due to their abundance secondhand and the 9800-CL not requiring licensing. 3650 switches and some old UCS M3 provided the compute required for the solution.</p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
