@@ -21,7 +21,7 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                             Responsible for the design, implementation and testing of various technology stacks for Cisco's largest companies. 
                         </p>
                         <p>
-                            Role involves working with large multi-national customers and provide direction and guidance on how we can best validate and test their network infrastructure to ensure reliability and performance. Architected and implemented network designs and constructed testplans and automated testcases to improve efficiency and reusability of testing.
+                            Role involves working with large multi-national corporations and providing direction and guidance on how we can best validate and test their network infrastructure to ensure reliability and performance. Designed and implemented network designs and constructed test plans and automated test cases to improve efficiency and reusability of testing.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -55,7 +55,7 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                             Leading the design, implementation and operation of sound reinforcement for our month long panto run during the festive season and various other events taking place throughout the year.
                         </p>
                         <p>
-                            All profits go the Starburst Foundation, who raise money for children with challenging disabilities
+                            All profits go the Starburst Foundation, which raises money for children with challenging disabilities
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -69,7 +69,7 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                         <h1 className="text-2xl">Full stack developer</h1>
                         <h4 className="vertical-timeline-element-subtitle">Self-employed</h4>
                         <p>
-                            Designed, Developed and Hosted a variety of websites for a variety of clients. Ranging from simple static HTML based websites, to full responsive PWAs backed with bespoke CMS.
+                            Designed, developed and hosted websites for a variety of clients. Ranging from simple static HTML based websites, to full responsive PWAs backed with bespoke CMS.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -86,7 +86,7 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                             Planned, designed and operated sound and lighting for a mix of internal and external events.
                         </p>
                         <p>
-                            Planned and implemented a new structured cabling network to future proof the theatre for the rise in lighting and sound data over IP networks.
+                            Planned and implemented a new structured cabling network to future proof the theatre for the rise of IP transport used for lighting and sound.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
