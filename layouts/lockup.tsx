@@ -16,7 +16,7 @@ const Lockup: React.FC<{loading: number, setLoading: Dispatch<SetStateAction<num
                             <Image src={PFP} className="rounded-full" onLoadingComplete={() => setLoading(loading + 1)}/>
                         </div>
                         <div className="text-2xl xs:text-4xl font-bold my-auto">
-                            <h1>Matt Gaynor</h1>
+                            <h1 className="text-5xl">Matt Gaynor</h1>
                             <h3 className="mt-4">Networking Consulting Engineer</h3>
                             <a href="https://www.linkedin.com/in/matt-gaynor/" target="_blank">
                                 <FontAwesomeIcon icon={faLinkedin} size='2x' className="p-5" />
