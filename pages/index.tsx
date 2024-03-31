@@ -17,7 +17,7 @@ const Index = () => {
   return (
     <>
       <CSSTransition
-        in={loading !== 2}
+        in={loading === 0}
         timeout={500}
         classNames="fade"
         unmountOnExit
