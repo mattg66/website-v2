@@ -5,7 +5,7 @@ import F6thLogo from '../components/F6thLogo';
 const JobTimeline: React.FC<{}> = ({ }) => {
     return (
         <>
-            <div className="bg-black">
+            <div className="bg-gradient-to-b from-black from-50% to-darkBlue to-97%">
                 <VerticalTimeline lineColor={'#00155f'}>
                 <VerticalTimelineElement
                         className="vertical-timeline-element--work"

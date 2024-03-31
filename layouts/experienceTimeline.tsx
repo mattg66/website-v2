@@ -22,6 +22,8 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         <p>Worked closely with customer to design a testbed that accurately represents their large scale environment in our testing space. This included over 60 switches and internal testing tools to simulate scale.</p>
                         <p>Deployed SDA across 5 sites using both MAN and SD-WAN topologies to connect sites. This included all ancillary services such AD, DNS, DHCP and a central certificate authority. Deployed CC and mDNAC along with virtual networks and verified traffic flow and reachability. As a result of the scale requirements, a compute solution to run over a thousand virtual switches was required, which took considerable planning in hardware and storage capacity to achieve.</p>
                         <p>Technologies involved: IOS-XE (9300, 9500, 9600, 9800), SDA, ISE, AD, vCenter/ESXi</p>
+                        <LazyImage src='/media/sda-ie.jpg'/>
+                        <p>DC power designed and implemented, the IE switches will be formed into a REP ring for failover and availability testing.</p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
@@ -32,7 +34,9 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                     >
                         <h1 className="text-2xl mb-2">Starburst Studios Network Deployment</h1>
                         <p>Refurbished an old village hall as part of a team and converted it into a collection of dance studios and vocal rooms as well as storage and office space.</p>
-                        <p>No infrastructure existed in the building so it was necessary to design and deploy a network solution. This consisted of running 50 Cat 6 runs to various positions for APs, CCTV and office computers. The budget was also very tight, so second hand equipment and open source software were used where possible. The resulting network needed to cope with over a hundred simultaneous clients during periods of high demand, so I selected the Cisco 2802I APs and 9800-CL WLC due to their abundance secondhand and the 9800-CL not requiring licensing. 3650 switches and some old UCS M3 provided the compute required for the solution.</p>
+                        <p>No infrastructure existed in the building so it was necessary to design and deploy a network solution. This consisted of running 50 Cat 6 runs to various positions for APs, CCTV and office computers. The budget was also very tight, so second hand equipment and open source software were used where possible. The resulting network needed to cope with over a hundred simultaneous clients during periods of high demand, so I selected the Cisco 2802I APs and 9800-CL WLC due to their abundance secondhand and the 9800-CL not requiring licensing. 3650 switches and UCS M3 provided the switching and compute required for the solution.</p>
+                        <LazyImage src='/media/starburst-rack.jpeg'/>
+                        <p className='text-xl'>We need some longer patch cables ;)</p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
@@ -109,7 +113,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                             <h3><u>Carl Lyons Studio</u></h3>
                         </a>
                         <p>
-                            Built using React and PHP, this website is my flagship project to date. Worked with the client to design a bespoke CMS to power the site, including features such as automatic watermark generation, and secure private vaults for holding client work.
+                            Built using React and PHP, I worked with the client to design a bespoke CMS to power the site, including features such as automatic watermark generation, and secure private vaults for holding client work.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
