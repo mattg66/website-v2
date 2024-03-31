@@ -42,7 +42,7 @@ const Lockup: React.FC<{loading: number, setLoading: Dispatch<SetStateAction<num
                     >
                         Your browser does not support the video tag.
                     </video>
-                    <VideoPlaceholder loading={loading < 2}/>
+                    <VideoPlaceholder loading={loading !== 2}/>
                 </NoSSR>
         </>
     )
