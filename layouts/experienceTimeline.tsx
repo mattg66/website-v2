@@ -29,7 +29,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: '#003db6', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
-                        iconStyle={{ background: '#003db6', color: '#fff' }}
+                        iconStyle={{ background: '#ffffff', color: '#fff' }}
                         icon={<StarburstLogo />}
                     >
                         <h1 className="text-2xl mb-2">Starburst Studios Network Deployment</h1>
