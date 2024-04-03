@@ -131,21 +131,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                             Accounted for future capacity by placing DMX and RJ45 ports all over the theatre in positions required currently, and in the future.
                             Terminated all of the runs in a central rack complete with the associated networking equipment.
                         </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        contentStyle={{ background: '#003db6', color: '#fff' }}
-                        contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
-                        date="June 2019 - September 2020"
-                        iconStyle={{ background: '#fff', color: '#fff' }}
-                        icon={<F6thLogo />}
-                    >
-                        <h1 className="text-2xl mb-2">Technical Theatre Technician</h1>
-                        <LazyImage src='/media/orchestra_sound.b42bf72f.jpg' />
-                        <p>
-                            Sound engineering for a big band in the theatre.
-                        </p>
-                    </VerticalTimelineElement>
+                    </VerticalTimelineElement
                 </VerticalTimeline>
             </div>
         </>

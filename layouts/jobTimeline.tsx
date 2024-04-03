@@ -49,10 +49,11 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                         iconStyle={{ background: '#fff', color: '#fff' }}
                         icon={<img src='/media/starburst.png' className="timeline-icon" />}
                     >
-                        <h1 className="text-2xl">Sound Designer and Operator</h1>
+                        <h1 className="text-2xl">Sound Designer and Operations Director</h1>
                         <h4 className="vertical-timeline-element-subtitle">Starburst Theatre Foundation - Volunteer</h4>
                         <p>
                             Leading the design, implementation and operation of sound reinforcement for our month long panto run during the festive season and various other events taking place throughout the year.
+                            Since March, I have taken on the role of operations director which will see me oversee the day to day running of our property and working out how we can best manage money and resources to secure the future for the charity.
                         </p>
                         <p>
                             All profits go the Starburst Foundation, which raises money for children with challenging disabilities
