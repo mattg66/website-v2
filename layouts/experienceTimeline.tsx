@@ -131,7 +131,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                             Accounted for future capacity by placing DMX and RJ45 ports all over the theatre in positions required currently, and in the future.
                             Terminated all of the runs in a central rack complete with the associated networking equipment.
                         </p>
-                    </VerticalTimelineElement
+                    </VerticalTimelineElement>
                 </VerticalTimeline>
             </div>
         </>
