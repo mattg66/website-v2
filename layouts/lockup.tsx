@@ -13,7 +13,7 @@ const Lockup: React.FC<{loading: number, setLoading: Dispatch<SetStateAction<num
                 <div className="relative z-30 p-5 text-2xl text-white font-open-sans text-center">
                     <div className="grid grid-cols-1 md:grid-cols-2">
                         <div className="max-w-xs mx-auto mb-5 md:mb-0">
-                            <Image src={PFP} className="rounded-full" onLoadingComplete={() => setLoading(loading + 1)}/>
+                            <Image src={PFP} className={`rounded-full transition-opacity duration-500 ${loading > 0 ? 'opacity-100' : 'opacity-0'}`} onLoadingComplete={() => setLoading(loading + 1)}/>
                         </div>
                         <div className="text-2xl xs:text-4xl font-bold my-auto">
                             <h1 className="text-5xl">Matt Gaynor</h1>
