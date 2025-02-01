@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     return (
         <>
             <Head>
-                <title>Matt Gaynor - Consulting Network Engineer</title>
+                <title>Matt Gaynor - IP Network Engineer</title>
             </Head>
             <GoogleReCaptchaProvider
                 reCaptchaKey="6LfDztwZAAAAAMHH1M_JoQm9k8bj7MaopFXtsDSH"
