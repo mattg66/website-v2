@@ -10,7 +10,7 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: '#003db6', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
-                        date="Sept 2023 - Present"
+                        date="May 2024 - Present"
                         iconStyle={{ background: '#003db6', color: '#fff' }}
                         icon={<Logo src="/media/ITN_logo_(2022).svg"/>}
                     >
@@ -27,7 +27,7 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: '#003db6', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
-                        date="Sept 2023 - Present"
+                        date="Sept 2023 - April 2024"
                         iconStyle={{ background: '#003db6', color: '#fff' }}
                         icon={<Logo src="/media/cisco-logo.png"/>}
                     >
