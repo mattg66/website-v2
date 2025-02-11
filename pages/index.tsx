@@ -37,20 +37,21 @@ const Index = () => {
               <Card icon={faKeyboard} title="Programming">
                 <p>PHP/Laravel</p>
                 <p>Python</p>
-                <p>JavaScript</p>
+                <p>TypeScript</p>
                 <p>React/Next.js</p>
                 <p>HTML</p>
                 <p>CSS</p>
               </Card>
               <Card icon={faEthernet} title="Networking">
-                <h1 className='font-bold text-white'>Cisco - CCNA Certified</h1>
+                <h1 className='font-bold text-white'>Cisco - CCNP ENCOR</h1>
                 <p>IOS-XE and NX-OS</p>
                 <p>ACI Fundamentals</p>
                 <p>Cisco 9800 WLC Family</p>
                 <p>Cisco SDA - DNAC/CC</p>
                 <p>Cisco SD-WAN</p>
                 <h1 className='font-bold text-white'>Other</h1>
-                <p>UniFi</p>
+                <p>Arista</p>
+                <p>Aruba Wireless</p>
                 <p>Mikrotik</p>
               </Card>
               <Card icon={faMicrochip} title="Containerisation / Virtualisation">
@@ -65,6 +66,7 @@ const Index = () => {
               <Card icon={faHardDrive} title="Storage">
                 <p>Cisco HyperFlex</p>
                 <p>TrueNAS/ZFS</p>
+                <p>CEPH</p>
               </Card>
               <Card icon={faServer} title="System Administration">
                 <h1 className='font-bold text-white'>Linux</h1>
@@ -81,8 +83,9 @@ const Index = () => {
                 <p>CA</p>
               </Card>
               <Card icon={faShieldHalved} title="Security">
-                <p>Cisco ASA</p>
+                <p>Palo Alto</p>
                 <p>Cisco ISE</p>
+                <p>Aruba ClearPass</p>
                 <p>pfSense</p>
               </Card>
 

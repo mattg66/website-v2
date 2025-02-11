@@ -1,6 +1,5 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import CiscoLogo from '../components/CiscoLogo';
-import F6thLogo from '../components/F6thLogo';
+import Logo from '../components/Logo';
 
 const JobTimeline: React.FC<{}> = ({ }) => {
     return (
@@ -13,7 +12,24 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         date="Sept 2023 - Present"
                         iconStyle={{ background: '#003db6', color: '#fff' }}
-                        icon={<CiscoLogo />}
+                        icon={<Logo src="/media/ITN_logo_(2022).svg"/>}
+                    >
+                        <h1 className="text-2xl">IP Network Engineer</h1>
+                        <h4 className="vertical-timeline-element-subtitle">ITN - Full Time</h4>
+                        <p>
+                            Designing and maintaining core broadcast 2110 infrastructure as well as supporting traditional corporate network functions. 
+                        </p>
+                        <p>
+                        The role focuses on designing and maintaining ST 2110 broadcast infrastructure, ensuring seamless, high-performance media workflows. In addition to broadcast systems, I also manage traditional corporate networking, including wired access, Wi-Fi, and IPTV, to support reliable connectivity and efficient operations across the organization.
+                        </p>
+                    </VerticalTimelineElement>
+                <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: '#003db6', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
+                        date="Sept 2023 - Present"
+                        iconStyle={{ background: '#003db6', color: '#fff' }}
+                        icon={<Logo src="/media/cisco-logo.png"/>}
                     >
                         <h1 className="text-2xl">Network Consulting Engineer</h1>
                         <h4 className="vertical-timeline-element-subtitle">Cisco CX Solution Validation Services - Full Time</h4>
@@ -30,7 +46,7 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         date="July 2021 - August 2022"
                         iconStyle={{ background: '#003db6', color: '#fff' }}
-                        icon={<CiscoLogo />}
+                        icon={<Logo src="/media/cisco-logo.png"/>}
                     >
                         <h1 className="text-2xl">Network Engineer Intern</h1>
                         <h4 className="vertical-timeline-element-subtitle">Cisco - Full Time</h4>
@@ -47,7 +63,7 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         date="Nov 2021 - Present"
                         iconStyle={{ background: '#fff', color: '#fff' }}
-                        icon={<img src='/media/starburst.png' className="timeline-icon" />}
+                        icon={<Logo src="/media/starburst.png"/>}
                     >
                         <h1 className="text-2xl">Sound Designer and Operations Director</h1>
                         <h4 className="vertical-timeline-element-subtitle">Starburst Theatre Foundation - Volunteer</h4>
@@ -65,7 +81,7 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         date="June 2015 - Present"
                         iconStyle={{ background: '#fff', color: '#fff' }}
-                        icon={<img src='/media/online-design.fd1b02a4.png' className='timeline-icon' />}
+                        icon={<Logo src="/media/online-design.fd1b02a4.png"/>}
                     >
                         <h1 className="text-2xl">Full stack developer</h1>
                         <h4 className="vertical-timeline-element-subtitle">Self-employed</h4>
@@ -79,7 +95,7 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         date="March 2019 - September 2020"
                         iconStyle={{ background: '#fff', color: '#fff' }}
-                        icon={<F6thLogo />}
+                        icon={<Logo src="/media/6th.png"/>}
                     >
                         <h1 className="text-2xl">Technical Theatre Technician</h1>
                         <h4 className="vertical-timeline-element-subtitle">Farnborough 6th Form College - Freelance</h4>
@@ -96,7 +112,7 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         date="June 2017 - September 2019"
                         iconStyle={{ background: '#003db6', color: '#fff' }}
-                        icon={<img src='/media/macs.png' className="timeline-icon" />}
+                        icon={<Logo src="/media/macs.png"/>}
                     >
                         <h1 className="text-2xl">FoH Team Member / Waiter</h1>
                         <h4 className="vertical-timeline-element-subtitle">McMullen & Sons Ltd</h4>

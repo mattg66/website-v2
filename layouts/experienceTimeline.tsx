@@ -1,9 +1,6 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import LazyImage from '../components/LazyImage';
-import CiscoLogo from '../components/CiscoLogo';
-
-import F6thLogo from '../components/F6thLogo';
-import StarburstLogo from '../components/StarburstLogo';
+import Logo from '../components/Logo';
 
 
 const ExperienceTimeline: React.FC<{}> = ({ }) => {
@@ -16,7 +13,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         contentStyle={{ background: '#003db6', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         iconStyle={{ background: '#003db6', color: '#fff' }}
-                        icon={<CiscoLogo />}
+                        icon={<Logo src="/media/cisco-logo.png"/>}
                     >
                         <h1 className="text-2xl mb-2">Large SDA Scale Validation</h1>
                         <p>Worked closely with customer to design a testbed that accurately represents their large scale environment in our testing space. This included over 60 switches and internal testing tools to simulate scale.</p>
@@ -30,7 +27,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         contentStyle={{ background: '#003db6', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         iconStyle={{ background: '#ffffff', color: '#fff' }}
-                        icon={<StarburstLogo />}
+                        icon={<Logo src="/media/starburst.png"/>}
                     >
                         <h1 className="text-2xl mb-2">Starburst Studios Network Deployment</h1>
                         <p>Refurbished an old village hall as part of a team and converted it into a collection of dance studios and vocal rooms as well as storage and office space.</p>
@@ -43,7 +40,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         contentStyle={{ background: '#003db6', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         iconStyle={{ background: '#003db6', color: '#fff' }}
-                        icon={<CiscoLogo />}
+                        icon={<Logo src="/media/cisco-logo.png"/>}
                     >
                         <h1 className="text-2xl">Private 5G Proof of Concept</h1>
                         <LazyImage src='/media/p5g.jpg' alt="5G PoC"/>
@@ -56,7 +53,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         contentStyle={{ background: '#003db6', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         iconStyle={{ background: '#003db6', color: '#fff' }}
-                        icon={<CiscoLogo />}
+                        icon={<Logo src="/media/cisco-logo.png"/>}
                     >
                         <h1 className="text-2xl mb-2">5G Cloud Core Testing</h1>
                         <LazyImage src='/media/rack2.jpg' alt="5G PoC"/>
@@ -78,7 +75,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         contentStyle={{ background: '#003db6', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         iconStyle={{ background: '#003db6', color: '#fff' }}
-                        icon={<CiscoLogo />}
+                        icon={<Logo src="/media/cisco-logo.png"/>}
                     >
                         <h1 className="text-2xl mb-2">High-Speed SP Network Testing</h1>
                         <LazyImage src='/media/rack1.jpg' alt="Rack"/>
@@ -105,7 +102,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         date="June 2020 - September 2020"
                         iconStyle={{ background: '#fff', color: '#fff' }}
-                        icon={<img src='/media/online-design.fd1b02a4.png' className='timeline-icon' />}
+                        icon={<Logo src="/media/online-design.fd1b02a4.png"/>}
                     >
                         <h1 className="text-2xl mb-2">Web Development</h1>
                         <a href="https://carllyonsstudio.com" target="_blank">
@@ -122,7 +119,7 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         date="August 2020"
                         iconStyle={{ background: '#fff', color: '#fff' }}
-                        icon={<F6thLogo />}
+                        icon={<Logo src="/media/6th.png"/>}
                     >
                         <h1 className="text-2xl mb-2">Technical Theatre Technician</h1>
                         <LazyImage src='/media/rack.2399c0c9.jpg' alt="Rack Installation"/>
