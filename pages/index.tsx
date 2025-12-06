@@ -32,65 +32,106 @@ const Index = () => {
         <div className="font-open-sans">
           <JobTimeline />
           <HorizontalDivider className="bg-darkBlue">
-            <h1 className="text-2xl xs:text-4xl text-white mt-4">My Skills</h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+            <h1 className="text-2xl xs:text-4xl text-white mt-4 mb-8">My Skills</h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 max-w-7xl mx-auto">
               <Card icon={faKeyboard} title="Programming">
-                <p>PHP/Laravel</p>
-                <p>Python</p>
-                <p>TypeScript</p>
-                <p>React/Next.js</p>
-                <p>HTML</p>
-                <p>CSS</p>
+                <div className="space-y-2">
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">PHP/Laravel</span>
+                    <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">Python</span>
+                    <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">TypeScript</span>
+                    <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">React/Next.js</span>
+                    <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">HTML</span>
+                    <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">CSS</span>
+                  </div>
+                </div>
               </Card>
               <Card icon={faEthernet} title="Networking">
-                <h1 className='font-bold text-white'>Cisco - CCNP ENCOR</h1>
-                <p>IOS-XE and NX-OS</p>
-                <p>ACI Fundamentals</p>
-                <p>Cisco 9800 WLC Family</p>
-                <p>Cisco SDA - DNAC/CC</p>
-                <p>Cisco SD-WAN</p>
-                <h1 className='font-bold text-white'>Other</h1>
-                <p>Arista</p>
-                <p>Aruba Wireless</p>
-                <p>Mikrotik</p>
+                <div className="space-y-3">
+                  <div>
+                    <h3 className='font-semibold text-white text-sm mb-2'>Cisco - CCNP Certified</h3>
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">IOS-XE & NX-OS</span>
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">ACI</span>
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">9800 WLC</span>
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">SDA/DNAC</span>
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">SD-WAN</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className='font-semibold text-white text-sm mb-2'>Other</h3>
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">Arista</span>
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">Aruba Wireless</span>
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">Mikrotik</span>
+                    </div>
+                  </div>
+                </div>
               </Card>
               <Card icon={faMicrochip} title="Containerisation / Virtualisation">
-                <h1 className='font-bold text-white'>VMware</h1>
-                <p>ESXi</p>
-                <p>vCenter</p>
-                <h1 className='font-bold text-white'>Linux</h1>
-                <p>Debian/CentOS/RHEL/Alma</p>
-                <p>KVM/Proxmox</p>
-                <p>Docker and LXC</p>
+                <div className="space-y-3">
+                  <div>
+                    <h3 className='font-semibold text-white text-sm mb-2'>VMware</h3>
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">ESXi</span>
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">vCenter</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className='font-semibold text-white text-sm mb-2'>Linux</h3>
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">Debian/RHEL</span>
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">KVM/Proxmox</span>
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">Docker & LXC</span>
+                    </div>
+                  </div>
+                </div>
               </Card>
               <Card icon={faHardDrive} title="Storage">
-                <p>Cisco HyperFlex</p>
-                <p>TrueNAS/ZFS</p>
-                <p>CEPH</p>
+                <div className="space-y-2">
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">Cisco HyperFlex</span>
+                    <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">TrueNAS/ZFS</span>
+                    <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">CEPH</span>
+                  </div>
+                </div>
               </Card>
               <Card icon={faServer} title="System Administration">
-                <h1 className='font-bold text-white'>Linux</h1>
-                <p>Apache and Nginx</p>
-                <p>PHP-FPM</p>
-                <p>Various SQL DBs</p>
-                <p>PowerDNS, Bind9, ISC-DHCP</p>
-                <p>Docker, Traefik</p>
-                <h1 className='font-bold text-white'>Windows Server</h1>
-                <p>AD DS</p>
-                <p>Group Policy</p>
-                <p>DHCP, DNS</p>
-                <p>RDS</p>
-                <p>CA</p>
+                <div className="space-y-3">
+                  <div>
+                    <h3 className='font-semibold text-white text-sm mb-2'>Linux</h3>
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">Apache/Nginx</span>
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">PHP-FPM</span>
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">SQL DBs</span>
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">DNS/DHCP</span>
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">Docker/Traefik</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className='font-semibold text-white text-sm mb-2'>Windows Server</h3>
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">AD DS</span>
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">Group Policy</span>
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">DHCP/DNS</span>
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">RDS</span>
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">CA</span>
+                    </div>
+                  </div>
+                </div>
               </Card>
               <Card icon={faShieldHalved} title="Security">
-                <p>Palo Alto</p>
-                <p>Cisco ISE</p>
-                <p>Aruba ClearPass</p>
-                <p>pfSense</p>
+                <div className="space-y-2">
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">Palo Alto</span>
+                    <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">Cisco ISE</span>
+                    <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">Aruba ClearPass</span>
+                    <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">pfSense</span>
+                  </div>
+                </div>
               </Card>
-
             </div>
-            <h1 className="text-2xl xs:text-4xl text-white mb-5">Projects & Work</h1>
+            <h1 className="text-2xl xs:text-4xl text-white mb-5 mt-12">Projects & Work</h1>
           </HorizontalDivider>
           <ExperienceTimeline />
           <Contact />
