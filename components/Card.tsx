@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core"
 import clsx from "clsx"
 
-const Card: React.FC<{ className?: string, icon?: IconDefinition, title?: string }> = ({ children, className, icon, title }) => (
+const Card: React.FC<{ className?: string, icon?: IconDefinition, title?: string, children?: React.ReactNode }> = ({ children, className, icon, title }) => (
     <>
         <div className={clsx("w-full max-w-sm mx-5 xs:mx-auto my-5", className)}>
             <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700 shadow-xl h-full transition-all duration-300 hover:shadow-2xl hover:shadow-lightBlue/20 hover:-translate-y-1 hover:border-lightBlue/50">

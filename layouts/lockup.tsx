@@ -5,7 +5,7 @@ import Image from "next/image"
 import PFP from "../public/media/pfp.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-const Lockup: React.FC<{loading: number, setLoading: Dispatch<SetStateAction<number>>}> = ({ loading, setLoading, children }) => {
+const Lockup: React.FC<{loading: number, setLoading: Dispatch<SetStateAction<number>>, children?: React.ReactNode}> = ({ loading, setLoading, children }) => {
 
 
     return (
