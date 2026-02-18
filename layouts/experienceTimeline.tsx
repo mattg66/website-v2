@@ -51,6 +51,17 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         contentStyle={cardStyle}
                         contentArrowStyle={arrowStyle}
                         iconStyle={iconDark}
+                        icon={<Logo src="/media/ITN_logo_(2022).svg"/>}
+                    >
+                        <h1 className="text-2xl mb-2 pb-2 border-b border-white/20">C4 News — ST 2110 Gallery Rebuild</h1>
+                        <div className="my-3"><LazyImage src='/media/PCR6-Refurb-1-726x545.jpg' alt="PCR6 Refurb"/></div>
+                        <p className="text-blue-100 text-sm leading-relaxed">Led the network design and implementation for a fully IP production gallery, centred around an ST 2110 workflow. Took ownership of the networking for a Sony vision mixer, TAG Video Systems multiviewers, Matrox convertIP devices and a Calrec Impluse sound console, ensuring reliable media transport and integration with the rest of the 2110 estate.</p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={cardStyle}
+                        contentArrowStyle={arrowStyle}
+                        iconStyle={iconDark}
                         icon={<Logo src="/media/cisco-logo.png"/>}
                     >
                         <h1 className="text-2xl mb-2 pb-2 border-b border-white/20">Large SDA Scale Validation</h1>

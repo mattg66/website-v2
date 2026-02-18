@@ -21,7 +21,7 @@ const LazyImage = ({ aspectRatio, ...props }: LazyImageProps) => {
                 sizes={props.sizes || "100vw"}
                 style={{ objectFit: 'contain' }}
                 className={`transition-opacity duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'}`}
-                onLoadingComplete={() => setLoading(false)}
+                onLoad={() => setLoading(false)}
             />
             {isLoading && (
                 <div className="absolute inset-0 flex items-center justify-center">

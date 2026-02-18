@@ -1,11 +1,10 @@
-import Link from 'next/link'
 import Lockup from '../layouts/lockup'
 import JobTimeline from '../layouts/jobTimeline'
 import ExperienceTimeline from '../layouts/experienceTimeline'
 import HorizontalDivider from '../components/HorizontalDivider'
 import 'react-vertical-timeline-component/style.min.css';
 import { CSSTransition } from 'react-transition-group'
-import { faKeyboard, faServer, faEthernet, faMicrochip, faHardDrive, faShieldHalved } from '@fortawesome/free-solid-svg-icons'
+import { faKeyboard, faServer, faEthernet, faMicrochip, faHardDrive, faShieldHalved, faChartLine } from '@fortawesome/free-solid-svg-icons'
 
 
 import Card from '../components/Card'
@@ -59,9 +58,9 @@ const Index = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className='font-semibold text-white text-sm mb-2'>Other</h3>
                     <div className="flex flex-wrap gap-2 justify-center">
                       <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">Arista</span>
+                      <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">Palo Alto</span>
                       <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">Aruba Wireless</span>
                       <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">Mikrotik</span>
                     </div>
@@ -130,6 +129,19 @@ const Index = () => {
                   </div>
                 </div>
               </Card>
+              <div className="md:col-span-2 xl:col-span-3 flex justify-center">
+              <Card icon={faChartLine} title="Monitoring & Telemetry">
+                <div className="space-y-2">
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <span className="px-3 py-1 bg-lightBlue/20 rounded-full text-sm border border-lightBlue/30">Zabbix</span>
+                    <span className="px-3 py-1 bg-lightBlue/20 rounded-full text-sm border border-lightBlue/30">Graylog</span>
+                    <span className="px-3 py-1 bg-lightBlue/20 rounded-full text-sm border border-lightBlue/30">Grafana</span>
+                    <span className="px-3 py-1 bg-lightBlue/20 rounded-full text-sm border border-lightBlue/30">InfluxDB</span>
+                    <span className="px-3 py-1 bg-lightBlue/20 rounded-full text-sm border border-lightBlue/30">NetBox</span>
+                  </div>
+                </div>
+              </Card>
+              </div>
             </div>
             <h1 className="text-2xl xs:text-4xl text-white mb-5 mt-12">Projects & Work</h1>
           </HorizontalDivider>

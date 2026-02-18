@@ -35,8 +35,8 @@ const JobTimeline: React.FC<{}> = ({ }) => {
                         <h1 className="text-2xl mb-2 pb-2 border-b border-white/20">IP Network Engineer</h1>
                         <h4 className="vertical-timeline-element-subtitle text-blue-200 mb-3">ITN - Full Time</h4>
                         <div className="space-y-2 text-blue-100 text-sm leading-relaxed">
-                            <p>Designing and maintaining core broadcast 2110 infrastructure as well as supporting traditional corporate network functions.</p>
-                            <p>The role focuses on designing and maintaining ST 2110 broadcast infrastructure, ensuring seamless, high-performance media workflows. In addition to broadcast systems, I also manage traditional corporate networking, including wired access, Wi-Fi, and IPTV, to support reliable connectivity and efficient operations across the organization.</p>
+                            <p>Designing and maintaining core broadcast ST 2110 infrastructure, ensuring seamless, high-performance media workflows, alongside traditional corporate networking including wired access, Wi-Fi, and IPTV.</p>
+                            <p>Beyond networking, I am also involved in compute platforms — designing and implementing hypervisor clusters to improve the compute resources available to projects</p>
                         </div>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
