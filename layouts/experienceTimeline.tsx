@@ -12,6 +12,21 @@ const ExperienceTimeline: React.FC<{}> = ({ }) => {
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: '#003db6', color: '#fff' }}
                         contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
+                        date="November 2024"
+                        iconStyle={{ background: '#003db6', color: '#fff' }}
+                        icon={<Logo src="/media/ITN_logo_(2022).svg"/>}
+                    >
+                        <h1 className="text-2xl mb-2">2025 US Election Live Coverage</h1>
+                        <div className="flex flex-col sm:flex-row gap-2">
+                            <div className="sm:flex-1"><LazyImage src='/media/harris-v-trump.jpg' alt="Harris v Trump" aspectRatio={1.5}/></div>
+                            <div className="sm:flex-1"><LazyImage src='/media/wave-nano.jpg' alt="Wave Nano" aspectRatio={1.5}/></div>
+                        </div>
+                        <p>Engineered connectivity for a rooftop temporary studio in Washington DC, using wireless point-to-point links to extend our US bureau&apos;s connectivity, delivering low-latency contribution back to London HQ for a 12-hour live programme.</p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: '#003db6', color: '#fff' }}
+                        contentArrowStyle={{ borderRight: '7px solid  #003db6' }}
                         iconStyle={{ background: '#003db6', color: '#fff' }}
                         icon={<Logo src="/media/cisco-logo.png"/>}
                     >

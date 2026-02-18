@@ -49,7 +49,7 @@ const Index = () => {
               <Card icon={faEthernet} title="Networking">
                 <div className="space-y-3">
                   <div>
-                    <h3 className='font-semibold text-white text-sm mb-2'>Cisco - CCNP Certified</h3>
+                    <h3 className='font-semibold text-white text-sm mb-2'>Cisco - CCNP Enterprise (Design) Certified</h3>
                     <div className="flex flex-wrap gap-2 justify-center">
                       <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">IOS-XE & NX-OS</span>
                       <span className="px-3 py-1 bg-lightBlue/20  rounded-full text-sm border border-lightBlue/30">ACI</span>
